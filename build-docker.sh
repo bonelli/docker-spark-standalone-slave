@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t bonelli/spark-standalone-master .
+docker build -t bonelli/spark-standalone-slave .

@@ -1,8 +1,8 @@
 FROM bonelli/spark-standalone
 
-EXPOSE 7077 8080
+EXPOSE 7078 8081
 
-ADD run-master.sh /opt/
+ADD run-slave.sh /opt/
 
 WORKDIR /opt/spark-1.1.0-bin-hadoop2.4
-CMD /opt/run-master.sh
+CMD /opt/run-slave.sh

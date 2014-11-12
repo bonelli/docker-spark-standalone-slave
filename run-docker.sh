@@ -1,1 +1,3 @@
-sudo docker run -d -e "SPARK_PUBLIC_DNS=$(hostname)" -p 7077:7077 -p 8080:8080 bonelli/spark-standalone-master
+#!/bin/bash
+MASTER_URL="spark://aede:7077"
+sudo docker run -d --net=host -e "MASTER_URL=${MASTER_URL}" bonelli/spark-standalone-slave
